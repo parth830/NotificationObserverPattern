@@ -19,9 +19,9 @@ class SwitchViewController: UIViewController {
     @IBAction func switchStateChanged(_ sender: UISwitch) {
         // MARK: Post notification when state changed
         if switchButton.isOn {
-            NotificationCenter.default.post(name: NSNotification.Name(FavouriteViewController.keySwitchOnStateNotification), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(FavoriteViewController.keySwitchOnStateNotification), object: nil)
         } else {
-            NotificationCenter.default.post(name: NSNotification.Name(FavouriteViewController.keySwitchOffStateNotification), object: nil)
+            NotificationCenter.default.post(name: NSNotification.Name(FavoriteViewController.keySwitchOffStateNotification), object: nil)
         }
     }
 }

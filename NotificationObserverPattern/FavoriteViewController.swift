@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FavouriteViewController: UIViewController {
+class FavoriteViewController: UIViewController {
+    
     // MARK: keys for notification
     static let keySwitchOnStateNotification = "keySwitchOnStateNotification"
     static let keySwitchOffStateNotification = "keySwitchOffStateNotification"
@@ -23,10 +24,10 @@ class FavouriteViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
 
-    //MARK: Creste Observers with key
+    //MARK: Create Observers with key
     func createObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(FavouriteViewController.handleOnStateChangeNotification), name: NSNotification.Name(FavouriteViewController.keySwitchOnStateNotification), object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(handleOffStateChangeNotification), name: NSNotification.Name(FavouriteViewController.keySwitchOffStateNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(FavoriteViewController.handleOnStateChangeNotification), name: NSNotification.Name(FavoriteViewController.keySwitchOnStateNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(handleOffStateChangeNotification), name: NSNotification.Name(FavoriteViewController.keySwitchOffStateNotification), object: nil)
     }
     
     // MARK: Change Background color when switch changed state
@@ -37,7 +38,5 @@ class FavouriteViewController: UIViewController {
     @objc func handleOffStateChangeNotification() {
         self.view.backgroundColor = .red
     }
-
-
 }
 

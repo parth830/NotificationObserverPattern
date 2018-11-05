@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Q9-55-ZYP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Q9-55-ZYP">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,16 +19,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B2e-tO-2SF">
-                                <rect key="frame" x="163" y="391" width="51" height="31"/>
+                                <rect key="frame" x="163" y="390.66666666666669" width="51" height="31"/>
                                 <connections>
                                     <action selector="switchStateChanged:" destination="beJ-g1-n80" eventType="valueChanged" id="9Yj-44-Dwm"/>
                                 </connections>
                             </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPJ-Tf-Oa0">
+                                <rect key="frame" x="220" y="391" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tvu-yD-Lny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBK-sl-Dxb">
+                                <rect key="frame" x="105" y="391" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZKn-fc-G3R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Background Color in Favorite Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZu-U3-4rR">
+                                <rect key="frame" x="17" y="451.66666666666669" width="342" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HT8-td-P90"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="B2e-tO-2SF" firstAttribute="centerY" secondItem="qNr-xH-yaJ" secondAttribute="centerY" id="3gZ-Na-VDi"/>
-                            <constraint firstItem="B2e-tO-2SF" firstAttribute="centerX" secondItem="qNr-xH-yaJ" secondAttribute="centerX" id="GNq-pM-gP5"/>
+                            <constraint firstItem="V6j-J0-qHS" firstAttribute="trailing" secondItem="zZu-U3-4rR" secondAttribute="trailing" constant="16" id="5bO-Ut-7mc"/>
+                            <constraint firstItem="zZu-U3-4rR" firstAttribute="top" secondItem="B2e-tO-2SF" secondAttribute="bottom" constant="30" id="I0C-ps-rXI"/>
+                            <constraint firstItem="zZu-U3-4rR" firstAttribute="leading" secondItem="V6j-J0-qHS" secondAttribute="leading" constant="17" id="IuS-rf-8bW"/>
+                            <constraint firstItem="B2e-tO-2SF" firstAttribute="centerY" secondItem="qNr-xH-yaJ" secondAttribute="centerY" id="Mra-Uu-95o"/>
+                            <constraint firstItem="V6j-J0-qHS" firstAttribute="trailing" secondItem="UPJ-Tf-Oa0" secondAttribute="trailing" constant="105" id="WJZ-pd-RK6"/>
+                            <constraint firstItem="B2e-tO-2SF" firstAttribute="centerX" secondItem="qNr-xH-yaJ" secondAttribute="centerX" id="Xzf-wK-Qip"/>
+                            <constraint firstItem="WBK-sl-Dxb" firstAttribute="centerY" secondItem="qNr-xH-yaJ" secondAttribute="centerY" id="cSK-hv-fb0"/>
+                            <constraint firstItem="UPJ-Tf-Oa0" firstAttribute="leading" secondItem="B2e-tO-2SF" secondAttribute="trailing" constant="8" id="eFg-Sk-ffo"/>
+                            <constraint firstItem="UPJ-Tf-Oa0" firstAttribute="centerY" secondItem="qNr-xH-yaJ" secondAttribute="centerY" id="eSc-Nu-w7F"/>
+                            <constraint firstItem="WBK-sl-Dxb" firstAttribute="leading" secondItem="V6j-J0-qHS" secondAttribute="leading" constant="105" id="gZd-t2-AEk"/>
+                            <constraint firstItem="B2e-tO-2SF" firstAttribute="leading" secondItem="WBK-sl-Dxb" secondAttribute="trailing" constant="8" id="xVZ-eb-6oy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V6j-J0-qHS"/>
                     </view>
@@ -39,12 +75,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3BZ-Gx-iZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-878" y="714"/>
+            <point key="canvasLocation" x="-644" y="713.79310344827593"/>
         </scene>
-        <!--Favourite View Controller-->
+        <!--Favorite View Controller-->
         <scene sceneID="YBU-Ne-vNY">
             <objects>
-                <viewController id="QKw-br-f96" customClass="FavouriteViewController" customModule="NotificationObserverPattern" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QKw-br-f96" customClass="FavoriteViewController" customModule="NotificationObserverPattern" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKb-cL-125">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
